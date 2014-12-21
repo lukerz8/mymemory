@@ -208,7 +208,7 @@
 		function createTaskRequest(taskJson) {
 			$.ajax({
 				type: "POST",
-				//dataType: "html",
+				dataType: "json",
 				url: "task/create.php",
 				data: taskJson,
 				success: function (data) {
